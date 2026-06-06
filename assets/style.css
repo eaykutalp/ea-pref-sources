@@ -1,0 +1,138 @@
+/* Google Preferred Source banner styling matching the brand tokens */
+
+.ea-pref-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 24px;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.ea-pref-card:hover {
+    border-color: #1A2732;
+    text-decoration: none;
+}
+
+.ea-pref-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ea-pref-icon-wrap {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F7F8FA;
+    border: 1px solid #E5E5E5;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+    flex-shrink: 0;
+}
+
+.ea-pref-card:hover .ea-pref-icon-wrap {
+    background-color: #E5E5E5;
+}
+
+.ea-pref-info {
+    text-align: left;
+    font-family: "Neue Galano", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.ea-pref-title {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1A2732;
+    line-height: 24px;
+    transition: color 0.2s ease;
+}
+
+.ea-pref-card:hover .ea-pref-title {
+    color: #1A2732;
+}
+
+.ea-pref-desc {
+    margin: 4px 0 0 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #6D7683;
+    line-height: 20px;
+}
+
+.ea-pref-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 8px 16px;
+    background-color: #1A2732;
+    color: #FFFFFF !important;
+    font-family: "Neue Galano", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    border-radius: 6px;
+    text-decoration: none !important;
+    white-space: nowrap;
+    transition: background-color 0.2s ease;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.ea-pref-button:hover {
+    background-color: #000000;
+    text-decoration: none !important;
+}
+
+.ea-pref-arrow {
+    width: 16px;
+    height: 16px;
+    margin-left: 6px;
+    stroke: currentColor;
+    stroke-width: 2;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: transform 0.2s ease;
+}
+
+.ea-pref-card:hover .ea-pref-arrow {
+    transform: translateX(2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 640px) {
+    .ea-pref-card {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+        gap: 16px;
+    }
+    
+    .ea-pref-left {
+        align-items: flex-start;
+    }
+    
+    .ea-pref-button {
+        width: 100%;
+        text-align: center;
+    }
+}
